@@ -21,7 +21,7 @@
 ## Versão 0.0.4 :heavy_check_mark:
 - Ao pressionar enter (/n) aumente a área de texto de acordo com o tamanho do texto.
 
-## Versão 0.0.5 (Hacker edition)
+## Versão 0.0.5 (Hacker edition) :heavy_check_mark:
 - Se o número de caracteres digitados (sem dar um "enter") exceder o tamanho da área de texto por padrão, mais uma linha deverá ser adicionada para que a rolagem não apareça. (Se aplicável)
 
 ## Versão 0.0.6 (Hacker edition)

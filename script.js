@@ -54,9 +54,14 @@ function changeCounterColor() {
 }
 
 function addRows() {
-  if (event.key === 'Enter') {
-    tweetText.rows++
+  let rows = tweetText.value.split('\n');
+  let rowsCounter = 0;
+
+  for (row of rows) {
+    rowsCounter += Math.max(Math.ceil(row.length / 50), 1);
   }
+
+  tweetText.setAttribute('rows', rowsCounter);
 }
 
 
