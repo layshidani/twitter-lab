@@ -10,15 +10,19 @@
 
 ![Versão 0.0.1](img/twitter-vs001.png)
 
-## Versão 0.0.2
+## Versão 0.0.2 :heavy_check_mark:
 - Não inserir texto vazio (desativar o botão "twittar").
 - Conte o número de caracteres de forma regressiva.
 
-## Versão 0.0.3
+![Versão 0.0.2](img/twitter-vs002.png)
+
+## Versão 0.0.3 :heavy_check_mark:
 - Se você passar os 140 caracteres, desative o - botão.
 - Se você passar os 120 caracteres, mostre o - contador com outra cor.
 - Se você passar os 130 caracteres, mostre o - contador com outra cor.
 - Se você passar os 140 caracteres, mostre o contador em negativo.
+
+![Versão 0.0.2](img/twitter-vs002.png)
 
 ## Versão 0.0.4
 - Ao pressionar enter (/n) aumente a área de texto de acordo com o tamanho do texto.

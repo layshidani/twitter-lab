@@ -14,31 +14,27 @@ body {
   padding: 16px;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 textarea {
   font-size: 18px;
   border-radius: 10px;
   margin-top: 5%;
-  padding: 10px;
+  padding: 5px;
   color: #2b3345;
-}
-
-.tweet-btn {
-  color: #ffffff;
-  font-size: 14px;
-  background-color: #1B95E0;
-  border-radius: 100px;
-  border: none;
-  width: 100px;
-  padding: 16px;
-  margin: 30px;
-  font-weight: bold;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .feed-post {
@@ -51,7 +47,39 @@ textarea {
   box-shadow: 10px 10px rgba(24.7%, 25.9%, 29%, 0.5);
 }
 
+.tweet-btn {
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #1B95E0;
+  border-radius: 100px;
+  border: none;
+  width: 120px;
+  padding: 16px;
+  margin: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.counter {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 5px;
+}
+
 .light-blue {
   color: #2b3345;
   background-color: #dee2ec;
+}
+
+.blue-counter {
+  color: #1B95E0;
+}
+
+.yellow-counter {
+  color: #FFAD20;
+}
+
+.red-counter {
+  color: red;
 }

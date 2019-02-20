@@ -1,8 +1,9 @@
 let tweetText = document.getElementById('tweet-text');
 let feed = document.getElementById('feed');
 let tweetbtn = document.getElementById('tweet-btn');
-let showCounter = document.getElementById('show-counter');
+let showCounter = document.getElementById('counter');
 let maxTextLength = 140;
+
 
 function publishTweet() {
   let newP = document.createElement('p');
@@ -23,12 +24,7 @@ function publishTweet() {
 function eraseForm() {
   document.getElementById("tweet-text").value = "";
   showCounter.textContent = maxTextLength;
-  
 }
-
-
-tweetbtn.addEventListener('click', publishTweet, false);
-tweetText.addEventListener('keyup', counterInit, false);
 
 
 function counterInit() {
@@ -36,11 +32,25 @@ function counterInit() {
 
   showCounter.textContent = charCounter;
 
-  if (charCounter === maxTextLength) {
-    console.log('entrou nif');
+  if (charCounter === maxTextLength || charCounter < 0) {
     tweetbtn.disabled = true;
   } else {
     tweetbtn.disabled = false;
-    console.log('entrou nelse');
+  }
+
+  changeCounterColor();
+}
+
+function changeCounterColor() {
+  if (tweetText.value.length > 130) {
+    showCounter.setAttribute('class', 'counter red-counter');
+  } else if (tweetText.value.length > 120 && tweetText.value.length <= 130) {
+    showCounter.setAttribute('class', 'counter yellow-counter');
+  } else {
+    showCounter.setAttribute('class', 'counter blue-counter');
   }
 }
+
+
+tweetbtn.addEventListener('click', publishTweet, false);
+tweetText.addEventListener('keyup', counterInit, false);
