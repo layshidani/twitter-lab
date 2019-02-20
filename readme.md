@@ -2,6 +2,8 @@
 
 [Link do projeto](https://hlays.github.io/twitter-lab/)
 
+![twitter feed](img/twitter-vs006.png)
+
 ## Versão 0.0.1 :heavy_check_mark:
 - Crie um formulário que permita inserir um texto e um botão para "twittar".
 - Adicione um evento de click ao botão ou de submit no formulário.
@@ -24,5 +26,5 @@
 ## Versão 0.0.5 (Hacker edition) :heavy_check_mark:
 - Se o número de caracteres digitados (sem dar um "enter") exceder o tamanho da área de texto por padrão, mais uma linha deverá ser adicionada para que a rolagem não apareça. (Se aplicável)
 
-## Versão 0.0.6 (Hacker edition)
+## Versão 0.0.6 (Hacker edition) :heavy_check_mark:
 - Adicione a hora em que o tweet foi publicado no formato de 24 horas hh:mm.

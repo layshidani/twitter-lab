@@ -45,7 +45,7 @@ textarea {
   margin: 10px;
   font-size: 18px;
   border-radius: 10px 10px 0 10px;
-  box-shadow: 10px 10px rgba(24.7%, 25.9%, 29%, 0.5);
+  box-shadow: 6px 6px rgba(24.7%, 25.9%, 29%, 0.5);
   word-wrap: break-word;
   text-align: left;
 }
@@ -53,6 +53,12 @@ textarea {
 .post-text {
   word-wrap: break-word;
   text-align: left;
+}
+
+.display-time {
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
 }
 
 .tweet-btn {

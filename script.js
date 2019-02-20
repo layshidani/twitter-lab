@@ -11,8 +11,12 @@ function publishTweet() {
   newP.setAttribute('id', 'post-text');
 
   let textWithBreakline = tweetText.value.replace(/\n/g, '<br>');
+  
+  let time = Date().split(' ')[4];
+  let displayTime = '<p class=\'display-time\'>' + time + '</p>'
 
-  newP.innerHTML = textWithBreakline;
+  
+  newP.innerHTML = displayTime + textWithBreakline;
 
   feed.insertBefore(newP, feed.childNodes[0]);
 
@@ -25,6 +29,7 @@ function eraseForm() {
   showCounter.textContent = maxTextLength;
   tweetbtn.disabled = true;
   tweetText.rows = 1;
+  showCounter.setAttribute('class', 'counter blue-counter');
 }
 
 
