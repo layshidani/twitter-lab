@@ -1,40 +1,18 @@
-let tweet = document.getElementById('tweet').value
-let tweetbtn = document.getElementById('tweet-btn')
-
-
-let clearBox = document.getElementById('tweet').value
-
-
-
-function publishTweet() {
-  const author = 'Laboratoria'
-  const postAuthor = document.createElement('h2')
-  postAuthor.textContent = author
+function publish() {
+  let tweetText = document.getElementById('tweet-text').value;
+  document.getElementById('post-text').innerHTML = tweetText;
   
-  const authorUsername = '@laboratoria'
-  const postAuthorUsername = document.createElement('p')
-  postAuthorUsername.textContent = authorUsername
-  
-  const tweetDate = Date().split(' ')[4]
-  const postDate = document.createElement('p')
-  postDate.textContent = tweetDate
-  
-  let hour = document.getElementsByClassName('hour')
-  hour.textContent = tweetDate
-  
-  let tweetText = document.getElementById('newpost-text')
-  let postTweet = document.createElement('p')
-  postTweet.textContent = tweet
-  
-  newpost.appendChild(postAuthor)
-  newpost.appendChild(postAuthorUsername)
-  newpost.appendChild(postDate)
-  newpost.appendChild(postTweet)
+  let postIt = document.getElementById('post-it');
+  postIt.style.visibility = 'visible';
+
+  eraseForm();
 }
 
-tweetbtn.addEventListener('click', publishTweet)
+function eraseForm() {
+  document.getElementById("tweet-text").value = "";
+}
 
+let tweetbtn = document.getElementById('tweet-btn');
 
-
-
+tweetbtn.addEventListener('click', publish, false);
 

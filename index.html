@@ -5,37 +5,90 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Twitter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/icon.png">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <i class="fab fa-twitter"></i>
+    </nav>
+  </header>
   <main>
     <section>
-      <form action="">
-        <label for=""></label>
-        <input id="tweet" type="text" placeholder="O que está acontecendo?">
-        <button id="tweet-btn">Tweetar</button>
-      </form>
+      <textarea id="tweet-text" type="text" cols="50" rows="2" placeholder="O que está acontecendo?"></textarea>
+      <br>
+      <button id="tweet-btn" class="tweet-btn">Tweetar</button>
     </section>
-    <section id="feed">
-      <div class="newpost">
-        <div id="newpost-header">
-          <h2></h2>
-          <p></p>
-          <p id="hour"></p>
+    <section id="feed" class="container">
+      <div class="feed-post lime" id="post-it">
+        <div class="post-header">
+          <h2>Laboratoria</h2>
+          <p class="user-name">@laboratoria</p>
+          <p class="post-hour"></p>
         </div>
-        <div id="post-body">
-          <p id="newpost-text">
-  
+        <div>
+          <p class="post-text" id="post-text"></p>
           </p>
         </div>
       </div>
-      <div class="post">
+      <div class="feed-post pink">
         <div class="post-header">
           <h2>Author</h2>
-          <p>Twitter username</p>
+          <p class="user-name">Twitter username</p>
           <p class="hour">20:26:14</p>
         </div>
-        <div class="post-body">
+        <div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu lorem. Quisque sit amet eleifend libero. Morbi massa lorem, ullamcorper in volutpat vitae, congue id arcu.
+          </p>
+        </div>
+      </div>
+      <div class="feed-post yellow">
+        <div class="post-header">
+          <h2>Author</h2>
+          <p class="user-name">Twitter username</p>
+          <p class="hour">20:00:11</p>
+        </div>
+        <div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu lorem. Quisque sit amet eleifend libero. Morbi massa lorem, ullamcorper in volutpat vitae, congue id arcu.
+          </p>
+        </div>
+      </div>
+      <div class="feed-post lime">
+        <div class="post-header">
+          <h2>Author</h2>
+          <p class="user-name">Twitter username</p>
+          <p class="hour">18:26:14</p>
+        </div>
+        <div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu lorem. Quisque sit amet eleifend libero. Morbi massa lorem, ullamcorper in volutpat vitae, congue id arcu.
+          </p>
+        </div>
+      </div>
+      <div class="feed-post orange">
+        <div class="post-header">
+          <h2>Author</h2>
+          <p class="user-name">Twitter username</p>
+          <p class="hour">16:34:14</p>
+        </div>
+        <div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu lorem. Quisque sit amet eleifend libero. Morbi massa lorem, ullamcorper in volutpat vitae, congue id arcu.
+          </p>
+        </div>
+      </div>
+      <div class="feed-post lime">
+        <div class="post-header">
+          <h2>Author</h2>
+          <p class="user-name">Twitter username</p>
+          <p class="hour">12:02:56</p>
+        </div>
+        <div>
           <p class="post-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu lorem. Quisque sit amet eleifend libero. Morbi massa lorem, ullamcorper in volutpat vitae, congue id arcu.
           </p>
@@ -45,4 +98,5 @@
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>

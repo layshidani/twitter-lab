@@ -1,0 +1,88 @@
+body {
+  text-align: center;
+  font-family: "Helvetica Neue";
+  background: url(img/adrien-olichon-1194950-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar {
+  color: #1B95E0;
+  text-align: center;
+  font-size: 40px;
+  padding: 16px;
+}
+
+textarea {
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+.tweet-btn {
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #1B95E0;
+  border-radius: 100px;
+  border: none;
+  width: 100px;
+  padding: 16px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+#post-it {
+  visibility: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.user-name {
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.feed-post {
+  width: 170px;
+  height: 170px;
+  padding: 5px;
+  margin: 20px;
+  font-size: 12px;
+}
+
+.hour {
+  margin: 0;
+}
+
+.lime {
+  color: black;
+  background-color: lime;
+}
+
+.pink {
+  background-color: #FF69B4;
+}
+
+.yellow {
+  background-color: #FFD700;
+}
+
+.orange {
+  background-color: #FFA500;
+}
