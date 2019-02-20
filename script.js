@@ -9,7 +9,7 @@ function publishTweet() {
   let newP = document.createElement('p');
   newP.setAttribute('class', 'feed-post light-blue');
   newP.setAttribute('id', 'post-text');
-  
+
   let textToPost = document.createTextNode(tweetText.value);
 
   newP.appendChild(textToPost);
@@ -17,13 +17,14 @@ function publishTweet() {
   feed.insertBefore(newP, feed.childNodes[0]);
 
   eraseForm();
-  tweetbtn.disabled = true;
 }
 
 
 function eraseForm() {
   document.getElementById("tweet-text").value = "";
   showCounter.textContent = maxTextLength;
+  tweetbtn.disabled = true;
+  tweetText.rows = 1;
 }
 
 
@@ -39,6 +40,7 @@ function counterInit() {
   }
 
   changeCounterColor();
+  addRows();
 }
 
 function changeCounterColor() {
@@ -49,6 +51,20 @@ function changeCounterColor() {
   } else {
     showCounter.setAttribute('class', 'counter blue-counter');
   }
+}
+
+function addRows() {
+  let rowsCounter = Math.ceil(tweetText.value.length / 50)
+
+  if (event.key === 'Enter') {
+    rowsCounter++
+
+    console.log(rowsCounter);
+
+  }
+
+  console.log(rowsCounter);
+  tweetText.rows = rowsCounter;
 }
 
 
