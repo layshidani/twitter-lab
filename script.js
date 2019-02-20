@@ -54,17 +54,9 @@ function changeCounterColor() {
 }
 
 function addRows() {
-  let rowsCounter = Math.ceil(tweetText.value.length / 50)
-
   if (event.key === 'Enter') {
-    rowsCounter++
-
-    console.log(rowsCounter);
-
+    tweetText.rows++
   }
-
-  console.log(rowsCounter);
-  tweetText.rows = rowsCounter;
 }
 
 
