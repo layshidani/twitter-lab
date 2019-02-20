@@ -22,7 +22,7 @@
 - Se você passar os 130 caracteres, mostre o - contador com outra cor.
 - Se você passar os 140 caracteres, mostre o contador em negativo.
 
-![Versão 0.0.2](img/twitter-vs002.png)
+![Versão 0.0.2](img/twitter-vs003.png)
 
 ## Versão 0.0.4
 - Ao pressionar enter (/n) aumente a área de texto de acordo com o tamanho do texto.
