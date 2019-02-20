@@ -10,9 +10,9 @@ function publishTweet() {
   newP.setAttribute('class', 'feed-post light-blue');
   newP.setAttribute('id', 'post-text');
 
-  let textToPost = document.createTextNode(tweetText.value);
+  let textWithBreakline = tweetText.value.replace(/\n/g, '<br>');
 
-  newP.appendChild(textToPost);
+  newP.innerHTML = textWithBreakline;
 
   feed.insertBefore(newP, feed.childNodes[0]);
 
