@@ -13,7 +13,7 @@ function publishTweet() {
   let textWithBreakline = tweetText.value.replace(/\n/g, '<br>');
   
   let time = Date().split(' ')[4];
-  let displayTime = '<p class=\'display-time\'>' + time + '</p>'
+  let displayTime = `<p class=\'display-time\'>${time}</p>`
 
   
   newP.innerHTML = displayTime + textWithBreakline;
