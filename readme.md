@@ -1,4 +1,4 @@
-# Projeto Twitter - sprint 2 (Laboratoria)
+# Projeto Twitter - Laboratoria v0.0.6
 
 [Link do projeto](https://hlays.github.io/twitter-lab/)
 
