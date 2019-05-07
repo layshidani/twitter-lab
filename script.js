@@ -1,28 +1,24 @@
-let tweetText = document.getElementById('tweet-text');
-let feed = document.getElementById('feed');
-let tweetbtn = document.getElementById('tweet-btn');
-let showCounter = document.getElementById('counter');
-let maxTextLength = 140;
-
+const tweetText = document.getElementById('tweet-text');
+const feed = document.getElementById('feed');
+const tweetbtn = document.getElementById('tweet-btn');
+const showCounter = document.getElementById('counter');
+const maxTextLength = 140;
 
 function publishTweet() {
-  let newP = document.createElement('p');
+  const newP = document.createElement('p');
   newP.setAttribute('class', 'feed-post light-blue');
   newP.setAttribute('id', 'post-text');
 
-  let textWithBreakline = tweetText.value.replace(/\n/g, '<br>');
-  
-  let time = Date().split(' ')[4];
-  let displayTime = `<p class=\'display-time\'>${time}</p>`
+  const textWithBreakline = tweetText.value.replace(/\n/g, '<br>');
 
-  
+  const time = Date().split(' ')[4];
+  const displayTime = `<p class=\'display-time\'>${time}</p>`
+
   newP.innerHTML = displayTime + textWithBreakline;
-
   feed.insertBefore(newP, feed.childNodes[0]);
 
   eraseForm();
 }
-
 
 function eraseForm() {
   document.getElementById("tweet-text").value = "";
@@ -32,9 +28,8 @@ function eraseForm() {
   showCounter.setAttribute('class', 'counter blue-counter');
 }
 
-
 function counterInit() {
-  let charCounter = (maxTextLength - tweetText.value.length);
+  const charCounter = (maxTextLength - tweetText.value.length);
 
   showCounter.textContent = charCounter;
 
@@ -59,16 +54,15 @@ function changeCounterColor() {
 }
 
 function addRows() {
-  let rows = tweetText.value.split('\n');
+  const rows = tweetText.value.split('\n');
   let rowsCounter = 0;
 
-  for (row of rows) {
+  for (const row of rows) {
     rowsCounter += Math.max(Math.ceil(row.length / 50), 1);
   }
 
   tweetText.setAttribute('rows', rowsCounter);
 }
-
 
 tweetbtn.addEventListener('click', publishTweet, false);
 tweetText.addEventListener('keyup', counterInit, false);
