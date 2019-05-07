@@ -21,7 +21,7 @@ function publishTweet() {
 }
 
 function eraseForm() {
-  document.getElementById("tweet-text").value = "";
+  document.getElementById('tweet-text').value = '';
   showCounter.textContent = maxTextLength;
   tweetbtn.disabled = true;
   tweetText.rows = 1;
