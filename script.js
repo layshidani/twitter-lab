@@ -4,14 +4,15 @@ const tweetbtn = document.getElementById('tweet-btn');
 const showCounter = document.getElementById('counter');
 const maxTextLength = 140;
 
-function publishTweet() {
+const publishTweet = () => {
+  const time = Date().split('')[4];
+
   const newP = document.createElement('p');
   newP.setAttribute('class', 'feed-post light-blue');
   newP.setAttribute('id', 'post-text');
 
   const textWithBreakline = tweetText.value.replace(/\n/g, '<br>');
 
-  const time = Date().split(' ')[4];
   const displayTime = `<p class=\'display-time\'>${time}</p>`
 
   newP.innerHTML = displayTime + textWithBreakline;
@@ -20,7 +21,7 @@ function publishTweet() {
   eraseForm();
 }
 
-function eraseForm() {
+const eraseForm = () => {
   document.getElementById('tweet-text').value = '';
   showCounter.textContent = maxTextLength;
   tweetbtn.disabled = true;
@@ -28,7 +29,7 @@ function eraseForm() {
   showCounter.setAttribute('class', 'counter blue-counter');
 }
 
-function counterInit() {
+const counterInit = () => {
   const charCounter = (maxTextLength - tweetText.value.length);
 
   showCounter.textContent = charCounter;
@@ -43,7 +44,7 @@ function counterInit() {
   addRows();
 }
 
-function changeCounterColor() {
+const changeCounterColor = () => {
   if (tweetText.value.length > 130) {
     showCounter.setAttribute('class', 'counter red-counter');
   } else if (tweetText.value.length > 120 && tweetText.value.length <= 130) {
@@ -53,7 +54,7 @@ function changeCounterColor() {
   }
 }
 
-function addRows() {
+const addRows = () => {
   const rows = tweetText.value.split('\n');
   let rowsCounter = 0;
 
