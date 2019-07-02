@@ -5,7 +5,7 @@ const showCounter = document.getElementById('counter');
 const maxTextLength = 140;
 
 const publishTweet = () => {
-  const time = Date().split('')[4];
+  const time = Date().split(' ')[4];
 
   const newP = document.createElement('p');
   newP.setAttribute('class', 'feed-post light-blue');
@@ -13,7 +13,7 @@ const publishTweet = () => {
 
   const textWithBreakline = tweetText.value.replace(/\n/g, '<br>');
 
-  const displayTime = `<p class=\'display-time\'>${time}</p>`
+  const displayTime = `<p class='display-time'>${time}</p>`
 
   newP.innerHTML = displayTime + textWithBreakline;
   feed.insertBefore(newP, feed.childNodes[0]);
